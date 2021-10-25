@@ -35,7 +35,7 @@ const Features = (props) => {
 
   return (
     <div id={props.id}>
-      <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+      <Row>
         <Col xs={24} sm={12} md={8}>
           <div className={classes.feature}>
             <PieChartOutlined />

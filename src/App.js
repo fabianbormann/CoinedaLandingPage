@@ -50,6 +50,8 @@ const useStyles = createUseStyles({
   footer: {
     display: "flex",
     justifyContent: "center",
+    backgroundColor: "white",
+    paddingTop: 12,
   },
 });
 
@@ -93,7 +95,7 @@ const App = () => {
         <Divider style={{ marginTop: 0 }} />
         <Developer id="developer" />
       </div>
-      <Divider />
+      <Divider style={{ marginBottom: 0 }} />
       <div className={classes.footer}>
         <p>Copyright © 2021 Fabian Bormann</p>
       </div>
