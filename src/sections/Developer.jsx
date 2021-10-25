@@ -43,8 +43,8 @@ const Developer = (props) => {
         <Col className={classes.text} xs={24} sm={12}>
           <h1>It's me, Fabian!</h1>
           <p>
-            Computer Science is my life! That's why I'm developing full stack
-            Software every day at my job or/and in my spare time. Only my kids
+            Computer science is my life! That's why I'm developing full stack
+            software every day at my job or/and in my spare time. Only my kids
             and family are able stop me. If you want to see another project that
             I'm working on please checkout{" "}
             <a href="https://battlechoc.com">battlechoc</a>.
