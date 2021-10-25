@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "PTSerif";
+  src: url("./fonts/PTSerif-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: "PTSerif";
+  src: url("./fonts/PTSerif-Italic.ttf");
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: "PTSerif";
+  src: url("./fonts/PTSerif-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "PTSerif";
+  src: url("./fonts/PTSerif-Regular.ttf");
+}
+
+body {
+  font-family: PTSerif;
+}
