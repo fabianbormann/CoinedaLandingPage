@@ -35,8 +35,12 @@ const useStyles = createUseStyles({
     marginRight: 8,
   },
   links: {
+    display: "flex",
     alignSelf: "center",
-    fontSize: "1.1rem",
+    "& > span": {
+      fontSize: "1.6rem",
+      marginTop: 2,
+    },
     "& > *": {
       marginLeft: 8,
     },
@@ -81,7 +85,14 @@ const App = () => {
             <Button type="text" onClick={() => jumpTo("developer")}>
               Developer
             </Button>
-            <GithubOutlined />
+            <GithubOutlined
+              style={{ fontSize: "1.6rem" }}
+              onClick={() =>
+                window.location.assign(
+                  "https://github.com/fabianbormann/Coineda"
+                )
+              }
+            />
           </div>
         </div>
         <Divider style={{ marginTop: 0 }} />

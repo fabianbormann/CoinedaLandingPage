@@ -1,4 +1,4 @@
-import { FireOutlined } from "@ant-design/icons";
+import { FireFilled } from "@ant-design/icons";
 import { Timeline, Row, Col, Button, Result } from "antd";
 import { createUseStyles } from "react-jss";
 
@@ -34,7 +34,7 @@ const Roadmap = (props) => {
       </Col>
       <Col xs={24} sm={12}>
         <Result
-          icon={<FireOutlined style={{ color: "#ff9c2c" }} />}
+          icon={<FireFilled style={{ color: "#ff9c2c" }} />}
           title="More wishes?"
           subTitle="You can use the issues section on GitHub to request new features, or send a mail to improvements@coineda.io"
           extra={

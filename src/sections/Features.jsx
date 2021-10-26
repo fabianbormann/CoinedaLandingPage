@@ -47,7 +47,7 @@ const Features = (props) => {
           <div className={classes.feature}>
             <GithubOutlined />
             <h2>Open Source</h2>
-            <p>No secrets. Coineda is open and available at GitHub</p>
+            <p>No secrets. Coineda is open source and available at GitHub</p>
           </div>
         </Col>
         <Col xs={24} sm={12} md={8}>

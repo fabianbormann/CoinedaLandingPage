@@ -94,7 +94,7 @@ const About = () => {
         </Col>
         <Col xs={24} md={12}>
           <p>
-            Coineda amins to be a <b>free</b>, plattform independent,{" "}
+            Coineda amins to be a <b>free</b>, platform independent,{" "}
             <b>local</b> running and <b>open source</b> crypto <b>tracking</b>{" "}
             tool.
             <br />
@@ -146,7 +146,7 @@ const About = () => {
                        provided dashboard and rudimentary tax calculations may contain
                        errors, are incorrect for your country or doesn't cover all tax
                        relevant regulations. Those calculations are developed to the best
-                       of my knowledge but I'm not a tax export and I do not take any
+                       of my knowledge but I'm not a tax expert and I do not take any
                        responsibility for incorrect calculations."
               type="warning"
             />
