@@ -1,7 +1,7 @@
 import { Button, Carousel, Select, Space, Row, Col, Alert, Tag } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
 import { createUseStyles } from "react-jss";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const { Option } = Select;
 
@@ -43,6 +43,16 @@ const useStyles = createUseStyles({
 
 const About = () => {
   const classes = useStyles();
+  const carousel = useRef();
+
+  useEffect(() => {
+    const autoplay = setInterval(() => {
+      carousel.current.next();
+    }, 6000);
+    return () => {
+      clearInterval(autoplay);
+    };
+  }, []);
 
   const estimateOperatingSystem = () => {
     const userAgent = window.navigator.userAgent;
@@ -64,19 +74,19 @@ const About = () => {
   const startDownload = () => {
     if (selectedPlatform === "windows") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.4/coineda-Setup-0.1.4.exe"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.5/coineda-Setup-0.1.5.exe"
       );
     } else if (selectedPlatform === "linux") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.4/coineda-0.1.4.AppImage"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.5/coineda-0.1.5.AppImage"
       );
     } else if (selectedPlatform === "linux-deb") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.4/coineda_0.1.4_amd64.deb"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.5/coineda_0.1.5_amd64.deb"
       );
     } else if (selectedPlatform === "osx") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.4/coineda-Setup-0.1.4.exe"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.5/coineda-0.1.5.dmg"
       );
     }
   };
@@ -85,7 +95,7 @@ const About = () => {
     <div className={classes.about}>
       <Row gutter={[32, 32]}>
         <Col xs={24} md={12}>
-          <Carousel className={classes.preview}>
+          <Carousel className={classes.preview} ref={carousel}>
             <img src="screens/dashboard.png" alt="dashboard" />
             <img src="screens/tracking.png" alt="tracking" />
             <img src="screens/tax.png" alt="tax" />
@@ -137,7 +147,7 @@ const About = () => {
               onClick={startDownload}
               icon={<DownloadOutlined />}
             >
-              {`Download Version 0.1.4`}
+              {`Download Version 0.1.5`}
             </Button>
             <span className={classes.info}></span>
 
