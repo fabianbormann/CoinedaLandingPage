@@ -74,19 +74,19 @@ const About = () => {
   const startDownload = () => {
     if (selectedPlatform === "windows") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.5/coineda-Setup-0.1.5.exe"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.7/coineda-Setup-0.1.7.exe"
       );
     } else if (selectedPlatform === "linux") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.5/coineda-0.1.5.AppImage"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.7/coineda-0.1.7.AppImage"
       );
     } else if (selectedPlatform === "linux-deb") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.5/coineda_0.1.5_amd64.deb"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.7/coineda_0.1.7_amd64.deb"
       );
     } else if (selectedPlatform === "osx") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.5/coineda-0.1.5.dmg"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.7/coineda-0.1.7.dmg"
       );
     }
   };
@@ -147,7 +147,7 @@ const About = () => {
               onClick={startDownload}
               icon={<DownloadOutlined />}
             >
-              {`Download Version 0.1.5`}
+              {`Download Version 0.1.7`}
             </Button>
             <span className={classes.info}></span>
 
