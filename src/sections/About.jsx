@@ -84,7 +84,7 @@ const About = () => {
       window.location.assign(
         "https://github.com/fabianbormann/Coineda/releases/download/v0.1.7/coineda_0.1.7_amd64.deb"
       );
-    } else if (selectedPlatform === "osx") {
+    } else if (selectedPlatform === "macosx") {
       window.location.assign(
         "https://github.com/fabianbormann/Coineda/releases/download/v0.1.7/coineda-0.1.7.dmg"
       );
