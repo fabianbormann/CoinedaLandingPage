@@ -74,19 +74,19 @@ const About = () => {
   const startDownload = () => {
     if (selectedPlatform === "windows") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.7/coineda-Setup-0.1.7.exe"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.2.0/coineda-Setup-0.2.0.exe"
       );
     } else if (selectedPlatform === "linux") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.7/coineda-0.1.7.AppImage"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.2.0/coineda-0.2.0.AppImage"
       );
     } else if (selectedPlatform === "linux-deb") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.7/coineda_0.1.7_amd64.deb"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.2.0/coineda_0.2.0_amd64.deb"
       );
     } else if (selectedPlatform === "macosx") {
       window.location.assign(
-        "https://github.com/fabianbormann/Coineda/releases/download/v0.1.7/coineda-0.1.7.dmg"
+        "https://github.com/fabianbormann/Coineda/releases/download/v0.2.0/coineda-0.2.0.dmg"
       );
     }
   };
@@ -123,7 +123,7 @@ const About = () => {
             }
             color="success"
           >
-            AGPL-3.0 License
+            GPL-3.0 License
           </Tag>
           <Space className={classes.download} direction="vertical">
             <span>
@@ -147,9 +147,21 @@ const About = () => {
               onClick={startDownload}
               icon={<DownloadOutlined />}
             >
-              {`Download Version 0.1.7`}
+              {`Download Version 0.2.0`}
             </Button>
             <span className={classes.info}></span>
+
+            <Alert
+              message={
+                <span>
+                  You can also run Coineda <b>without installation</b> locally
+                  in your browser at{" "}
+                  <a href="https://app.coineda.io">app.coineda.io</a>. All data
+                  is stored locally within your browser's storage.
+                </span>
+              }
+              type="info"
+            />
 
             <Alert
               message="Coineda does not provide tax, legal or accounting advices. The

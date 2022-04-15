@@ -22,14 +22,13 @@ const Roadmap = (props) => {
     <Row id={props.id} className={classes.roadmap}>
       <Col xs={24} sm={12}>
         <Timeline mode="alternate">
-          <Timeline.Item>Kraken import</Timeline.Item>
-          <Timeline.Item>Binance import</Timeline.Item>
-          <Timeline.Item>Uphold import</Timeline.Item>
-          <Timeline.Item>Mobile App</Timeline.Item>
           <Timeline.Item>
-            (P2P) Sync between app and desktop client
+            Import from non-custodial wallets (Ethereum, Polygon, Binance Smart
+            Chain)
           </Timeline.Item>
+          <Timeline.Item>(P2P) Sync between different clients</Timeline.Item>
           <Timeline.Item>Customizable dashboard</Timeline.Item>
+          <Timeline.Item>NFT support</Timeline.Item>
         </Timeline>
       </Col>
       <Col xs={24} sm={12}>
