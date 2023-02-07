@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<img alt="Deploy to Firebase Hosting" src="https://github.com/fabianbormann/CoinedaLandingPage/actions/workflows/firebase-hosting-merge.yml/badge.svg?branch=main" />
+<img alt="Deploy to Firebase Hosting" src="https://github.com/fabianbormann/CoinedaLandingPage/actions/workflows/deploy.yml/badge.svg?branch=main" />
 <img alt="semantic-release: angular" src="https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release" />
 
 </p>
