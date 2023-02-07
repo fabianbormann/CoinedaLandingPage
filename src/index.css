@@ -21,4 +21,13 @@
 
 body {
   font-family: PTSerif;
+  margin: 0;
+}
+
+.feature-slider {
+  box-shadow: 1px 1px 9px #666;
+}
+
+.feature-slider img {
+  vertical-align: middle;
 }
