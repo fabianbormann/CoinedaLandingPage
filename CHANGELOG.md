@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/fabianbormann/CoinedaLandingPage/compare/v1.0.0...v1.0.1) (2023-02-08)
+
+
+### Bug Fixes
+
+* adjust theme color for mobile devices ([f9f53d1](https://github.com/fabianbormann/CoinedaLandingPage/commit/f9f53d1520ca9fb2d47e8d1add01f58bda647ce7))
+
 ## 1.0.0 (2023-02-07)
 
 
