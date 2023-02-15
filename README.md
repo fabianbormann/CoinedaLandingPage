@@ -2,9 +2,10 @@
 
 <p align="center">
 
-<img alt="Deploy to Firebase Hosting" src="https://github.com/fabianbormann/CoinedaLandingPage/actions/workflows/deploy.yml/badge.svg?branch=main" />
-<img alt="semantic-release: angular" src="https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release" />
-
+<img alt="Deploy to Firebase Hosting" src="https://img.shields.io/github/actions/workflow/status/fabianbormann/CoinedaLandingPage/release.yml?label=Release&style=for-the-badge" />
+<img alt="Deploy to Firebase Hosting" src="https://img.shields.io/github/actions/workflow/status/fabianbormann/CoinedaLandingPage/deploy.yml?label=Deployment&style=for-the-badge" />
+<a href="https://conventionalcommits.org"><img alt="conventionalcommits" src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&style=for-the-badge" /></a>
+<a href="https://discord.gg/anryt23SB3"><img alt="Discord" src="https://img.shields.io/discord/1066798434671141056?label=Discord%20Chat&style=for-the-badge" /></a>
 </p>
 
 This project contains the code and the deployment for the Coineda landing page.
